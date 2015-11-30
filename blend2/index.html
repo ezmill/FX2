@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title>IWP Effect Demo</title>
+	<style>
+		body {
+			color: #fff;
+			font-family:Monospace;
+			font-size:13px;
+			margin: 0px;
+			text-align:center;
+			/*overflow: hidden;*/
+		}
+		#selectors{
+			position: absolute;
+			top: 0;
+			/*margin: 5px;*/
+			padding: 10px;
+			background: rgba(0,0,0,0.5); 
+		}
+		select{
+			display: block;
+			margin: 5px 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="container"></div>
+	<div id="selectors">
+		<label for="effectsSelector">Current Effect</label>
+		<select onchange="createEffect();"name="effectsSelector" id="effectsSelector">
+			<option value="warp">Warp</option>
+			<option value="color blur">Color Blur</option>
+			<option value="darken">Darken</option>
+			<option value="revert">Revert</option>
+			<option value="rgb shift">RGB Shift</option>
+			<option value="oil paint">Oil Paint</option>
+			<option value="median blur">Median Blur</option>
+			<option value="warm filter">Warm Filter</option>
+			<option value="cool filter">Cool Filter</option>
+			<option value="barrel blur">Barrel Blur</option>
+			<option value="repos">Reposition</option>
+			<option value="flow">Flow</option>
+			<option value="gradient">Gradient</option>
+			<option value="warp flow">Warp Flow</option>
+			<option value="stained glass">Stained Glass</option>
+			<option value="edge detect">Edge Detect</option>
+		</select>
+		<label for="nextEffectsSelector">Next Effect</label>
+		<select id="nextEffectsSelector" name="nextEffectsSelector">
+			<option value="warp">Warp</option>
+			<option value="color blur">Color Blur</option>
+			<option value="darken">Darken</option>
+			<option value="revert">Revert</option>
+			<option value="rgb shift">RGB Shift</option>
+			<option value="oil paint">Oil Paint</option>
+			<option value="median blur">Median Blur</option>
+			<option value="warm filter">Warm Filter</option>
+			<option value="cool filter">Cool Filter</option>
+			<option value="barrel blur">Barrel Blur</option>
+			<option value="repos">Reposition</option>
+			<option value="flow">Flow</option>
+			<option value="gradient">Gradient</option>
+			<option value="warp flow">Warp Flow</option>
+			<option value="stained glass">Stained Glass</option>
+			<option value="edge detect">Edge Detect</option>
+		</select>
+		<button onclick="createNewEffect();">Go to next effect</button>
+	</div>
+	<script src="scripts/js/three.min.js"></script>
+	<script src="scripts/js/BrushChunk.js"></script>
+	<script src="scripts/js/HeatHazeShader.js"></script>
+	<script src="scripts/js/MeshShader.js"></script>
+	<script src="scripts/js/DenoiseShader.js"></script>
+	<script src="scripts/js/StainedGlassShader.js"></script>
+	<script src="scripts/js/RgbShiftShader.js"></script>
+	<script src="scripts/js/KuwaharaShader.js"></script>
+	<script src="scripts/js/SobelShader.js"></script>
+	<script src="scripts/js/RevertShader.js"></script>
+	<script src="scripts/js/BlendShader.js"></script>
+	<script src="scripts/js/BarrelBlurShader.js"></script>
+	<script src="scripts/js/OilPaintShader.js"></script>
+	<script src="scripts/js/FilterShader.js"></script>
+	<script src="scripts/js/MixShader.js"></script>
+	<script src="scripts/js/GradientShader.js"></script>
+	<script src="scripts/js/WarpFlowShader.js"></script>
+	<script src="scripts/js/CustomShaders2.js"></script>
+	<script src="scripts/js/Effects.js"></script>
+	<script src="scripts/js/FeedbackMaterial2.js"></script>
+	<script src="scripts/js/Mask.js"></script>
+    <script src="scripts/js/main.js"></script>
+</body>
+</html>
