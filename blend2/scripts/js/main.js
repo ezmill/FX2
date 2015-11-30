@@ -93,7 +93,7 @@ function createNewEffect(){
 	    // effect = new Effect(effects[effectIndex]);
 	    effect = new Effect(nextEffectsSelector.options[nextEffectsSelector.selectedIndex].value);
 	    effect.init();
-	    currentEffectsSelector.options[currentEffectsSelector.selectedIndex].innerHTML = nextEffectsSelector.options[nextEffectsSelector.selectedIndex].innerHTML;
+	    // currentEffectsSelector.options[currentEffectsSelector.selectedIndex].innerHTML = nextEffectsSelector.options[nextEffectsSelector.selectedIndex].innerHTML;
 		if(effect.useMask){
 			mask = new Mask();
 			mask.init();
